@@ -1,13 +1,15 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>pictures</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
 
-</body>
-</html>
+<header>
+    <h1>{% block header %}some of my pics in my world{% endblock %}</h1>
+
+</header>
+
+    {% block content %}
+        <img src="{% static 'images/do2.jpeg' %}" alt="">
+        <img src="{% static 'images/dog3.jpeg' %}" alt="">
+        <img src="{% static 'images/dog4.jpeg' %}" alt="">
+        <p>animals are the cutes thing i have ever seen</p>
+    {% endblock %}
+

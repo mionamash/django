@@ -8,3 +8,5 @@ def base(request):
     return render(request,'base.html')
 def contacts(request):
     return render(request,'contacts.html')
+def gallery(request):
+    return render(request,'gallery.html')
