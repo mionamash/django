@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My website{% endblock %}</title>
+</head>
+<body>
+<header>
+    <h1>{% block header %}Welcome to my world{% endblock %}</h1>
+<nav>
+    <ul>
+        <li><a href="{% url 'my_home' %}">home</a></li>
+        <li><a href="{%url 'my_about'%}">about</a></li>
+         <li><a href="{% url 'my_contact' %}">contacts</a></li>
+
+    </ul>
+</nav>
+</header>
+<main>
+    {% block content %}{% endblock %}
+
+</main>
+<footer>
+    <p>&copy; 2024 my world</p>
+</footer>
+</body>
+</html>
